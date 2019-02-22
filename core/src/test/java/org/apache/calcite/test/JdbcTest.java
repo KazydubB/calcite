@@ -764,7 +764,7 @@ public class JdbcTest {
     assertTrue(driverVersion.equals(mm(driverMajor, driverMinor))
         || driverVersion.startsWith(mm(driverMajor, driverMinor) + ".")
         || driverVersion.startsWith(mm(driverMajor, driverMinor) + "-")
-        || driverVersion.endsWith("-SNAPSHOT")
+        || driverVersion.endsWith("-drill-test")
             && driverVersion.startsWith(mm(driverMajor, driverMinor + 1)));
 
     assertTrue(databaseVersion.startsWith("1."));
