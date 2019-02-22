@@ -20,12 +20,12 @@ limitations under the License.
   <parent>
     <groupId>org.apache.calcite</groupId>
     <artifactId>calcite</artifactId>
-    <version>1.19.0</version>
+    <version>1.19.0-drill-test</version>
   </parent>
 
   <artifactId>calcite-linq4j</artifactId>
   <packaging>jar</packaging>
-  <version>1.19.0</version>
+  <version>1.19.0-drill-test</version>
   <name>Calcite Linq4j</name>
   <description>Calcite APIs for LINQ (Language-Integrated Query) in Java</description>
 
@@ -78,6 +78,14 @@ limitations under the License.
           <includes>
             <include>org/apache/calcite/linq4j/test/Linq4jSuite.java</include>
           </includes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>8</source>
+          <target>8</target>
         </configuration>
       </plugin>
     </plugins>
