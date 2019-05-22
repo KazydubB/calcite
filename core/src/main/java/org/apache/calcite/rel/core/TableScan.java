@@ -108,6 +108,7 @@ public abstract class TableScan extends AbstractRelNode {
 
   @Override public RelWriter explainTerms(RelWriter pw) {
     return super.explainTerms(pw)
+        .item("rowType", getRowType())
         .item("table", table.getQualifiedName());
   }
 
